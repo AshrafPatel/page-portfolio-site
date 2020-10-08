@@ -1,9 +1,28 @@
+import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import linkedinProfile from "../../assets/linkedinProfile.PNG"
+
 export class BootstrapCarousel extends Component {    
     render() {       
         return (    
             <div>
-                <div class='container-fluid' >
-                    <div className="row title" style={{ marginBottom: "    px" }} >
-                    <div class="col-sm-     btn btn-warning">How To Use Bootstrap Carousel In ReactJS</div>      
-                    </div>      
-                        </div>      <div className='container-fluid' >      <Carousel>      <Carousel.Item style={{'height':"      px"}} >      <img style={{'height':"      px"}}      className="d-block w-      "      src={'assets/img/img  .jpg'} />      <Carousel.Caption>      <h  >First Demo </h  >      </Carousel.Caption>      </Carousel.Item >      <Carousel.Item style={{'height':"      px"}}>      <img style={{'height':"      px"}}      className="d-block w-      "      src={'assets/img/img  .jpg'} />      <Carousel.Caption>      <h  >Second Demo</h  >      </Carousel.Caption>      </Carousel.Item>      <Carousel.Item style={{'height':"      px"}}>      <img style={{'height':"      px"}}      className="d-block w-      "      src={'assets/img/img  .jpg'} />      <Carousel.Caption>      <h  >Third Demo</h  >      </Carousel.Caption>      </Carousel.Item>      </Carousel>      </div>      </div>      )      }      }           export default BootstrapCarousel 
+                <div className='container-fluid'>
+                    <Carousel>
+                        <Carousel.Item style={{'height':"900px"}}>
+                            <img style={{'height':"auto"}} className="d-block w-50 m-auto"  src={linkedinProfile}/>
+                            <Carousel.Caption>
+                                <h3>LinkedIn Profile</h3>
+                            </Carousel.Caption>  
+                        </Carousel.Item>
+                        <Carousel.Item style={{'height':"900px"}}>  
+                            <img style={{'height':"auto"}}  className="d-block w-50 m-auto"  src={linkedinProfile}/>
+                            <Carousel.Caption>
+                                <h3>Second Demo</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>    
+                </div>
+            </div>
+        )
+    }
+}
