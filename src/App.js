@@ -12,8 +12,8 @@ function App() {
     <Header/>
       <Switch>
         <Route exact path="/" component={HomePage}/>
-        <Route path="/shop" component={AboutPage}/>
-        <Route path="/signin" component={ProjectsPage}/>
+        <Route path="/about" component={AboutPage}/>
+        <Route path="/portfolio" component={ProjectsPage}/>
       </Switch>
     </Fragment>
   )
